@@ -1,1 +1,82 @@
 /*  your css code here. If applicable */
+ * {
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      margin: 0;
+    }
+
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 320px;
+    }
+
+    h1 {
+      color: #0072ff;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 80%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #0072ff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005ecb;
+    }
+
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 80px);
+      grid-template-rows: repeat(3, 80px);
+      gap: 5px;
+      margin: 20px auto;
+    }
+
+    .cell {
+      width: 80px;
+      height: 80px;
+      background: #f3f3f3;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .cell:hover {
+      background: #e0e0e0;
+    }
+
+    .message {
+      font-size: 1.1em;
+      margin-top: 10px;
+      color: #333;
+      font-weight: bold;
+    }
