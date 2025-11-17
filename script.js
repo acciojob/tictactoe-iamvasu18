@@ -36,7 +36,7 @@ const submitBtn = document.getElementById('submit');
       currentPlayer = player1;
       playerForm.style.display = 'none';
       gameDiv.style.display = 'block';
-      messageDiv.textContent = `${currentPlayer}, you're up!`;
+      messageDiv.textContent = `${currentPlayer} you're up!`;
       createBoard();
     });
 
@@ -56,7 +56,7 @@ const submitBtn = document.getElementById('submit');
 
       if (board[index] !== '' || gameOver) return;
 
-      board[index] = currentPlayer === player1 ? 'X' : 'O';
+      board[index] = currentPlayer === player1 ? 'x' : 'o';
       e.target.textContent = board[index];
 
       if (checkWinner()) {
