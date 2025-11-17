@@ -60,19 +60,19 @@ const submitBtn = document.getElementById('submit');
       e.target.textContent = board[index];
 
       if (checkWinner()) {
-        messageDiv.textContent = `${currentPlayer}, congratulations you won! 🎉`;
+        messageDiv.textContent = `${currentPlayer}, congratulations you won!`;
         gameOver = true;
         return;
       }
 
       if (board.every(cell => cell !== '')) {
-        messageDiv.textContent = `It's a draw! 🤝`;
+        messageDiv.textContent = `It's a draw`;
         gameOver = true;
         return;
       }
 
       currentPlayer = currentPlayer === player1 ? player2 : player1;
-      messageDiv.textContent = `${currentPlayer}, you're up!`;
+      messageDiv.textContent = `${currentPlayer}, you're up`;
     }
 
     function checkWinner() {
